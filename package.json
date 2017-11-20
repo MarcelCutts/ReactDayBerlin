@@ -6,8 +6,7 @@
     "flow-bin": "^0.59.0",
     "react": "^16.1.1",
     "react-dom": "^16.1.1",
-    "spectacle-scripts": "2.0.0",
-    "styled-components": "^2.2.3"
+    "spectacle-scripts": "2.0.0"
   },
   "scripts": {
     "start": "react-scripts start",

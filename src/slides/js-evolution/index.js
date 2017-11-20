@@ -1,6 +1,6 @@
 import React from 'react';
 import { Slide, CodePane, Magic } from 'spectacle';
-import styled from 'styled-components';
+import styled from 'react-emotion';
 
 const callbacks = `
 getData(a => {
@@ -35,7 +35,7 @@ const async = `
 
 // This makes me feel dirty
 const LargeCodePane = styled(CodePane)`
-  font-size: 2rem !important; 
+  font-size: 2.5rem !important; 
 `;
 
 const JSEvolution = (

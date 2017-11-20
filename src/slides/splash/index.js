@@ -1,5 +1,5 @@
 import React from "react";
-import styled from "styled-components";
+import styled from "react-emotion";
 import {
   Heading,
   Layout,
@@ -13,7 +13,7 @@ const images = {
   twitterLogo: require("./twitter-logo.png")
 };
 
-const TwitterBlock = styled.span`
+const TwitterBlock = styled('span')`
   display: flex;
   justify-content: center;
 `;
