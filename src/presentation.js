@@ -3,7 +3,7 @@ import React from 'react';
 
 // Import Spectacle Core tags
 import {
-  Deck,
+  Deck
 } from 'spectacle';
 
 // Import theme
@@ -11,6 +11,25 @@ import createTheme from 'spectacle/lib/themes/default';
 
 import Splash from './slides/splash';
 import JSEvolution from './slides/js-evolution';
+import Tooling from './slides/tooling';
+import QuestionRelevance from './slides/question-relevance';
+import ReasonSplash from './slides/reason-splash';
+import OcamlSplash from './slides/ocaml-splash';
+import Elixir from './slides/elixir';
+import Definition from './slides/definition';
+import Whatsapp from './slides/whatsapp';
+import QuestionBrowser from './slides/question-browser';
+import BucklescriptBloomberg from './slides/bucklescript-bloomberg';
+import BucklescriptSplash from './slides/bucklescript-splash';
+import QuestionWhy from './slides/question-why';
+import Syntax from './sections/syntax';
+import PowerCouple from './slides/power-couple';
+import CoreIntro from './sections/core-intro';
+import TypeHype from './sections/type-hype';
+import BuckleScript from './sections/bucklescript';
+import CompilationPath from './slides/compilation-path';
+import CompileToJSAlternatives from './slides/compile-to-js-alternatives';
+
 
 // Require CSS
 require('normalize.css');
@@ -57,6 +76,45 @@ export default class Presentation extends React.Component {
       <Deck transition={['slide']} transitionDuration={500} theme={theme}>
         {Splash}
         {JSEvolution}
+        {Tooling}
+        { /* Lang? */ }
+
+        {ReasonSplash}
+        {Definition}
+        {OcamlSplash}
+        {QuestionRelevance}
+        {Elixir}
+        {Whatsapp}
+        {QuestionBrowser}
+        {BucklescriptBloomberg}
+        {BucklescriptSplash}
+        {CompilationPath}
+
+        {QuestionWhy}
+        {PowerCouple}
+        {CompileToJSAlternatives}
+        {CoreIntro}
+        {Syntax}
+        {TypeHype}
+        {BuckleScript}
+
+
+
+        {/*}
+        {PowerCouple}
+        {Approachable but deep}
+        {Absolute type hype - editor, errors}
+        {Bucklescript is a beast - perf, readable output, ffi}
+        {alternatives fail in ffi, size, etc}
+        {what does it actually look like?}
+        {berghain but one small problem...}
+        {gig example + interop?}
+        {comparison to other ctjs}
+        {react}
+        {Benefits}
+        */
+        }
+
       </Deck>
     );
   }
