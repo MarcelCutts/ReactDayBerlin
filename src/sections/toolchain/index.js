@@ -7,7 +7,6 @@ import {
   Fill
 } from 'spectacle';
 import styled from 'react-emotion'
-import CompileToJSAlternatives from '../../slides/compile-to-js-alternatives';
 import Tooling from '../../slides/tooling';
 
 const images = {
@@ -69,8 +68,7 @@ const Toolchain = [
     </Heading>
   </Slide> ,
   <Slide transition={["slide"]} bgImage={images.perfTweet} /> ,
-
-  <Slide transition={["fade"]} bgImage={images.ojcompare} /> ,
+  <Slide transition={["fade"]} bgImage={images.equivCode} /> ,
   <Slide
     transition={["fade"]}
     bgImage={images.equivCode}
@@ -102,7 +100,7 @@ const Toolchain = [
           3415 ms
     </Heading>
         <Heading textColor="primary" size={4} margin="50px 50px 0 0">
-          55.3K Bytes
+          55.3K bytes
     </Heading>
       </Fill>
       <Fill>
@@ -130,7 +128,7 @@ const Toolchain = [
     <Heading size={1} textColor="tertiary">
       😱
 </Heading>
-  </Slide> ,
+  </Slide>,
   <Slide
     transition={["slide"]}
     bgImage={images.output1}

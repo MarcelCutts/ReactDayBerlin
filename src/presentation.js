@@ -30,6 +30,8 @@ import Toolchain from './sections/toolchain';
 import CompilationPath from './slides/compilation-path';
 import CompileToJSAlternatives from './slides/compile-to-js-alternatives';
 import Outro from './sections/outro';
+import ReasonReact from './sections/reason-react/';
+import Conclusion from './sections/conclusion';
 
 // Require CSS
 require('normalize.css');
@@ -97,6 +99,8 @@ export default class Presentation extends React.Component {
         {Syntax}
         {TypeHype}
         {Toolchain}
+        {ReasonReact}
+        {Conclusion}
 
 
 
