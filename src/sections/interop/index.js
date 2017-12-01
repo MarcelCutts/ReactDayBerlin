@@ -1,7 +1,7 @@
 import React from 'react';
 import {
   Slide,
-  Headng,
+  Heading,
   Image
 } from 'spectacle';
 
@@ -11,9 +11,16 @@ import CompiletoJsAlternatives from '../../slides/compile-to-js-alternatives';
 
 const images = {
   webpack: require('./webpack.png'),
+  bsval: require('./bsval.png'),
+  config: require('./config.png'),
+  export: require('./export.png'),
+  raw: require('./raw.png'),
+  require: require('./require.png'),
+  stein: require('./stein.png'),
 }
 
-const Heading = [
+
+const Intro = [
   <Slide transition={["slide"]} bgColor={"tertiary"}>
     <Heading fit caps textColor="primary">
       Please, what about the
@@ -35,7 +42,15 @@ const Heading = [
 // lots of escape hatches
 // Output types
 
+const JsInRe = [
+  <Slide transition={["slide"]} bgImage={images.stein} />,
+  <Slide transition={["slide"]} bgImage={images.bsval} />,
+  <Slide transition={["slide"]} bgImage={images.raw} />,
+]
+
 const ReInJs = [
+  <Slide transition={["slide"]} bgImage={images.config} />,
+  <Slide transition={["slide"]} bgImage={images.require} />,
   <Slide transition={["slide"]}>
     <Image src={images.webpack} width="80%" />
   </Slide>,
@@ -51,17 +66,11 @@ const ReInJs = [
     </Heading>
   </Slide>
 ]
- // JS
-
- // Pizza example
-const JsInRe = [
-  
-]
-
 
 const Interop = [
-  ...Heading,
+  ...Intro,
   CompiletoJsAlternatives,
+  ...JsInRe,
   ...ReInJs
 ];
 

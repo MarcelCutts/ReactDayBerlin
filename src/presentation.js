@@ -32,6 +32,7 @@ import CompileToJSAlternatives from './slides/compile-to-js-alternatives';
 import Outro from './sections/outro';
 import ReasonReact from './sections/reason-react/';
 import Conclusion from './sections/conclusion';
+import Interop from './sections/interop';
 
 // Require CSS
 require('normalize.css');
@@ -99,6 +100,7 @@ export default class Presentation extends React.Component {
         {Syntax}
         {TypeHype}
         {Toolchain}
+        {Interop}
         {ReasonReact}
         {Conclusion}
 

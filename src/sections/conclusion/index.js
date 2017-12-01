@@ -71,4 +71,9 @@ const Conclusion = [
 </Slide>
 ];
 
+// Dev experience great
+// Moving though
+// Confidence
+// 
+
 export default Conclusion;

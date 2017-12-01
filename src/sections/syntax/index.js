@@ -32,17 +32,6 @@ const Syntax = [
       </Heading>
   </Slide>,
   <Slide transition={["slide"]} bgColor="primary">
-    <Heading size={3} textColor="tertiary">
-      OCaml + Type Erasure
-    </Heading>
-    <Heading size={2} textColor="tertiary" margin={"50px 0 50px 0"}>
-      ≈
-    </Heading>
-    <Heading size={3} textColor="tertiary">
-      JavaScript
-    </Heading>
-  </Slide>,
-  <Slide transition={["slide"]} bgColor="primary">
     <Heading fit textColor="tertiary">
       Familiar
         </Heading>
@@ -65,6 +54,9 @@ const Syntax = [
   </Heading>
   </Slide>,
   <Slide transition={["slide"]} bgImage={images.syntax} />,
+  <Slide transition={["slide"]} bgImage={images.page} />,
+  <Slide transition={["slide"]} bgImage={images.bsbinstall} />,
+  <Slide transition={["slide"]} bgImage={images.nine} />,
   <Slide transition={["slide"]} bgImage={images.init} />,
   <Slide transition={["slide"]} bgImage={images.directory} />,
   <Slide transition={["slide"]} bgImage={images.ide} />,
@@ -83,7 +75,8 @@ const Syntax = [
     <Heading size={2} textColor="tertiary" margin={"50px 0 50px 0"}>
       obviously
     </Heading>
-  </Slide>
+  </Slide>,
+  <Slide transition={["slide"]} bgImage={images.student} />
 ];
 
 export default Syntax;

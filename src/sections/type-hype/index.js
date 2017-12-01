@@ -11,7 +11,13 @@ const images = {
   flow: require('./flow.png'),
   typescript: require('./typescript.png'),
   patrick: require('./patrick.jpg'),
-  tictactoe: require('./tictactoe.png')
+  tictactoe: require('./tictactoe.png'),
+  flow1: require('./flow1.png'),
+  flow2: require('./flow2.png'),
+  re1: require('./re1.png'),
+  re2: require('./re2.png'),
+  error1: require('./errors1.png'),
+  error2: require('./errors2.png')
 };
 
 const TypeHype = [
@@ -63,14 +69,7 @@ const TypeHype = [
     <Heading caps size={4} textAlign="left" margin={"30px 0 0 50px"}>
       ⛑ Type Sound
     </Heading>
-  </Slide>,
-  <Slide transition={["slide"]} bgColor="secondary">
-    <Image src={images.patrick} height="50%" />
-    <Heading fit caps textColor="primary">
-      @ryyppy
-      </Heading>
-  </Slide>,
-  <Slide transition={["slide"]} bgImage={images.tictactoe} />
+  </Slide>
 ];
 
 export default TypeHype;
