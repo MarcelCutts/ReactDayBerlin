@@ -5,6 +5,7 @@ import {
   Appear
 } from 'spectacle';
 
+import CompileToJSAlternatives from '../../slides/compile-to-js-alternatives';
 
 const CoreIntro = [
   <Slide transition={["slide"]} bgColor="primary">
@@ -81,10 +82,13 @@ const CoreIntro = [
         🚲 Hipster cred
     </Heading>
     </Appear>
-  </Slide>,
+  </Slide>
+];
+
+const Outstanding = (
   <Slide transition={["slide"]} bgColor="primary">
     <Heading caps size={1} textAlign="left" margin={"30px 0 0 0"}>
-      ⚡️ Familiar
+      🐱️ Familiar
     </Heading>
     <Heading caps size={1} textAlign="left" margin={"30px 0 0 0"}>
       👨‍🏫 Types
@@ -93,9 +97,11 @@ const CoreIntro = [
       🏎 Toolchain
     </Heading>
     <Heading caps size={1} textAlign="left" margin={"30px 0 0 0"}>
-      📝 Results
+      🤝 Interop
     </Heading>
   </Slide>
-]
+);
 
-export default CoreIntro;
+
+
+export default [...CoreIntro, CompileToJSAlternatives, Outstanding];

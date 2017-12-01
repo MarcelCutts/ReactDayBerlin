@@ -1,26 +1,24 @@
-import React from "react";
-import styled from "react-emotion";
+import React from 'react';
 import {
+  Slide,
   Heading,
   Layout,
   Fill,
-  Image,
-  Slide
-} from "spectacle";
+  Image
+} from 'spectacle';
 
 const images = {
-  reasonLogo: require("./reason-logo.png"),
-  twitterLogo: require("./twitter-logo.png")
+  twitter: require('./twitter.png')
 };
 
-const TwitterBlock = styled('span')`
-  display: flex;
-  justify-content: center;
-`;
-
-const Splash = (
+const Outro = [
   <Slide transition={["slide"]} bgColor="primary">
-    <Image src={images.reasonLogo} width="100%" />
+    <Heading fit caps textColor="tertiary">
+      Thanks
+    </Heading>
+    <Heading fit caps textColor="tertiary" margin={"0 0 80px 0"}>
+      for listening!
+    </Heading>
     <Layout>
       <Fill>
         <Heading
@@ -32,7 +30,7 @@ const Splash = (
           padding={"5px 0"}
         >
           Marcel Cutts
-        </Heading>
+    </Heading>
       </Fill>
       <Fill>
         <Heading
@@ -43,14 +41,16 @@ const Splash = (
           margin={10}
           padding={"5px 0"}
         >
-          <TwitterBlock>
-            @marcelcutts
-            <Image src={images.twitterLogo} height="30px" margin="5px 0 0 5px" />
-          </TwitterBlock>
+          @marcelcutts{" "}
+          <Image
+            src={images.twitterLogo}
+            height="30px"
+            margin="3px 0 0 0"
+          />
         </Heading>
       </Fill>
     </Layout>
   </Slide>
-);
+];
 
-export default Splash;
+export default Outro;

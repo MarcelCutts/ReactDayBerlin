@@ -6,6 +6,17 @@ import {
 
 const images = {
   syntax: require("./syntax.png"),
+  init: require("./init.png"),
+  directory: require('./directory.png'),
+  ide: require('./bare-ide.png'),
+  src: require('./src.png'),
+  package: require('./package.png'),
+  bsconfig: require('./bsconfig.png'),
+  yarn: require('./yarnstart.png'),
+  output: require('./jsoutput.png'),
+  add: require('./add.png'),
+  addoutput: require('./addoutput.png'),
+  typeerror: require('./typeerror.png')
 }
 
 const Syntax = [
@@ -22,13 +33,13 @@ const Syntax = [
   </Slide>,
   <Slide transition={["slide"]} bgColor="primary">
     <Heading size={3} textColor="tertiary">
-        OCaml + Type Erasure
+      OCaml + Type Erasure
     </Heading>
     <Heading size={2} textColor="tertiary" margin={"50px 0 50px 0"}>
-        ≈
+      ≈
     </Heading>
     <Heading size={3} textColor="tertiary">
-        JavaScript
+      JavaScript
     </Heading>
   </Slide>,
   <Slide transition={["slide"]} bgColor="primary">
@@ -38,7 +49,7 @@ const Syntax = [
     <Heading size={3} textColor="tertiary" margin={"50px 0 50px 0"}>
       BUT
         </Heading>
-    <Heading  fit  textColor="tertiary">
+    <Heading fit textColor="tertiary">
       Powerful
   </Heading>
   </Slide>,
@@ -54,9 +65,23 @@ const Syntax = [
   </Heading>
   </Slide>,
   <Slide transition={["slide"]} bgImage={images.syntax} />,
+  <Slide transition={["slide"]} bgImage={images.init} />,
+  <Slide transition={["slide"]} bgImage={images.directory} />,
+  <Slide transition={["slide"]} bgImage={images.ide} />,
+  <Slide transition={["slide"]} bgImage={images.src} />,
+  <Slide transition={["slide"]} bgImage={images.package} />,
+  <Slide transition={["slide"]} bgImage={images.bsconfig} />,
+  <Slide transition={["slide"]} bgImage={images.yarn} />,
+  <Slide transition={["slide"]} bgImage={images.output} />,
+  <Slide transition={["slide"]} bgImage={images.add} />,
+  <Slide transition={["slide"]} bgImage={images.addoutput} />,
+  <Slide transition={["slide"]} bgImage={images.typeerror} />,
   <Slide transition={["slide"]} bgColor="primary">
-    <Heading size={1} textColor="tertiary">
-      <span role="img" aria-label="pizza">🍕</span>
+    <Heading fit textColor="tertiary">
+      "67"
+    </Heading>
+    <Heading size={2} textColor="tertiary" margin={"50px 0 50px 0"}>
+      obviously
     </Heading>
   </Slide>
 ];

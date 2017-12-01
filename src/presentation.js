@@ -26,10 +26,10 @@ import Syntax from './sections/syntax';
 import PowerCouple from './slides/power-couple';
 import CoreIntro from './sections/core-intro';
 import TypeHype from './sections/type-hype';
-import BuckleScript from './sections/bucklescript';
+import Toolchain from './sections/toolchain';
 import CompilationPath from './slides/compilation-path';
 import CompileToJSAlternatives from './slides/compile-to-js-alternatives';
-
+import Outro from './sections/outro';
 
 // Require CSS
 require('normalize.css');
@@ -96,7 +96,7 @@ export default class Presentation extends React.Component {
         {CoreIntro}
         {Syntax}
         {TypeHype}
-        {BuckleScript}
+        {Toolchain}
 
 
 
@@ -114,6 +114,8 @@ export default class Presentation extends React.Component {
         {Benefits}
         */
         }
+
+        {Outro}
 
       </Deck>
     );
