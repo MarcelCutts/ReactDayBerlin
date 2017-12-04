@@ -16,7 +16,11 @@ const images = {
   output: require('./jsoutput.png'),
   add: require('./add.png'),
   addoutput: require('./addoutput.png'),
-  typeerror: require('./typeerror.png')
+  typeerror: require('./typeerror.png'),
+  page: require('./page.png'),
+  student: require('./student.png'),
+  bsbinstall: require('./bsbinstall.png'),
+  tweet: require('./tweet.png')
 }
 
 const Syntax = [
@@ -54,9 +58,9 @@ const Syntax = [
   </Heading>
   </Slide>,
   <Slide transition={["slide"]} bgImage={images.syntax} />,
+  <Slide transition={["slide"]} bgImage={images.tweet} />,
   <Slide transition={["slide"]} bgImage={images.page} />,
   <Slide transition={["slide"]} bgImage={images.bsbinstall} />,
-  <Slide transition={["slide"]} bgImage={images.nine} />,
   <Slide transition={["slide"]} bgImage={images.init} />,
   <Slide transition={["slide"]} bgImage={images.directory} />,
   <Slide transition={["slide"]} bgImage={images.ide} />,

@@ -10,10 +10,20 @@ import {
 const images = {
   madness: require('./madness.jpg'),
   lair: require('./lair.jpg'),
-  messenger: require('./messenger.svg')
 }
 
 const Conclusion = [
+  <Slide transition={["slide"]} bgColor="tertiary">
+  <Heading size={3} caps textColor="primary">
+    Should I use
+    </Heading>
+  <Heading fit caps textColor="primary">
+    ReasonML
+    </Heading>
+  <Heading size={3} caps textColor="primary">
+    today?
+    </Heading>
+</Slide>,
   <Slide transition={["slide"]} bgColor="primary">
     <Heading
       size={3}
@@ -46,34 +56,16 @@ const Conclusion = [
       👩‍ New community
 </Heading>
   </Slide>,
-  <Slide transition={["slide"]} bgImage={images.madness} />,
   <Slide transition={["slide"]} bgImage={images.lair} />,
-  <Slide bgImage={images.messenger} bgColor={"#0084ff"}/>,
-  <Slide transition={["slide"]} bgColor="primary">
-  <Heading fit caps>
-    Messenger.com{" "}
-  </Heading>
-  <Appear>
-    <Heading size={4} textAlign="left" margin={"30px 0 0 50px"}>
-      {"⚡️ <100ms build"}
-    </Heading>
-  </Appear>
-  <Appear>
-    <Heading size={4} textAlign="left" margin={"30px 0 0 50px"}>
-      🐜 10 bugs /year
-    </Heading>
-  </Appear>
-  <Appear>
-    <Heading size={4} textAlign="left" margin={"30px 0 0 50px"}>
-      🚀 Days->Mins refactor
-    </Heading>
-  </Appear>
-</Slide>
+    <Slide transition={["slide"]} bgColor="primary">,
+    <Heading fit caps textColor="tertiary">
+      Mediocrity
+        </Heading>
+    <Heading fit caps textColor="tertiary" margin={"50px 0 50px 0"}>
+      kills
+        </Heading>
+  </Slide>
 ];
 
-// Dev experience great
-// Moving though
-// Confidence
-// 
 
 export default Conclusion;

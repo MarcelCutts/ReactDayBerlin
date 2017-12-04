@@ -5,7 +5,6 @@ import {
   Appear
 } from 'spectacle';
 
-import CompileToJSAlternatives from '../../slides/compile-to-js-alternatives';
 
 const CoreIntro = [
   <Slide transition={["slide"]} bgColor="primary">
@@ -104,4 +103,4 @@ const Outstanding = (
 
 
 
-export default [...CoreIntro, CompileToJSAlternatives, Outstanding];
+export default [...CoreIntro, Outstanding];
